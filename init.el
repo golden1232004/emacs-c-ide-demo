@@ -158,3 +158,8 @@
 
 ;; Package zygospore
 (global-set-key (kbd "C-x 1") 'zygospore-toggle-delete-other-windows)
+
+;;switch window
+(add-to-list 'load-path "~/.emacs.d/switch-window")
+(require 'switch-window)
+(global-set-key (kbd "C-x o") 'switch-window)
