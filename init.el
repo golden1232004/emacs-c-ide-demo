@@ -1,10 +1,10 @@
 (require 'package)
 (add-to-list 'package-archives
-	     '("melpa" . "http://melpa.milkbox.net/packages/") t)
+	     '("melpa" . "http://melpa.org/packages/") t)
 (package-initialize)
 
 (setq gc-cons-threshold 100000000)
-(setq inhibit-startup-message t)
+;;(setq inhibit-startup-message t)
 
 (defalias 'yes-or-no-p 'y-or-n-p)
 
