@@ -87,9 +87,10 @@
 ;; “python”: What Python developers use for extension modules
 ;; “java”: The default style for java-mode (see below)
 ;; “user”: When you want to define your own style
-(setq
- c-default-style "linux" ;; set style to "linux"
- )
+;(setq
+; c-default-style "linux" ;; set style to "linux"
+					; )
+(setq c-default-style "stroustrup")
 
 (global-set-key (kbd "RET") 'newline-and-indent)  ; automatically indent when press RET
 
