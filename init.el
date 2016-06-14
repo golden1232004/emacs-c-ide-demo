@@ -90,7 +90,15 @@
 ;(setq
 ; c-default-style "linux" ;; set style to "linux"
 					; )
-(setq c-default-style "gnu")
+(custom-set-variables
+ '(c-default-style
+  (quote
+   ((c-mode . "stroustrup")
+    (c++-mode . "stroustrup")
+    (objc-mode . "stroustrup")
+    (java-mode . "java")
+    (awk-mode . "awk")
+    (other . "gnu")))))
 
 (global-set-key (kbd "RET") 'newline-and-indent)  ; automatically indent when press RET
 
