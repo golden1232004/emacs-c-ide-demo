@@ -4,3 +4,5 @@ elpa/*
 snippets
 *~
 projectile-bookmarks.eld
+semanticdb/*
+recentf
