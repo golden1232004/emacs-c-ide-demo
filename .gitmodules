@@ -4,3 +4,6 @@
 [submodule "cedet"]
 	path = cedet
 	url = git@github.com:golden1232004/cedet.git
+[submodule "chinese-pyim"]
+	path = chinese-pyim
+	url = git@github.com:golden1232004/chinese-pyim.git
