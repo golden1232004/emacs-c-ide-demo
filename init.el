@@ -184,7 +184,7 @@
  ;; If there is more than one, they won't work right.
  '(pyim-dicts
    (quote
-    ((:name "pyim-bigdict.pyim" :file "/home/golden/.emacs.d/chinese-pyim/pyim-bigdict.pyim" :coding utf-8-unix :dict-type pinyin-dict)))))
+    ((:name "pyim-bigdict.pyim" :file "~/.emacs.d/chinese-pyim/pyim-bigdict.pyim" :coding utf-8-unix :dict-type pinyin-dict)))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
