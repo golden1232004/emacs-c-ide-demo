@@ -5,6 +5,9 @@
 
 (setq gc-cons-threshold 100000000)
 ;;(setq inhibit-startup-message t)
+(tool-bar-mode 0) ;; close tool bar
+(menu-bar-mode t) ;; enable menu bar
+(scroll-bar-mode 0) ;;close scroll bar
 
 (defalias 'yes-or-no-p 'y-or-n-p)
 
