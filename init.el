@@ -206,3 +206,20 @@
 (doxymacs-mode);doxymacs-mode常true
 (add-hook 'c-mode-common-hook 'doxymacs-mode) ;; 启动doxymacs-mode
 (add-hook 'c++-mode-common-hook 'doxymacs-mode) ;; 启动doxymacs-mode
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;highlight-indentation;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;
+;;; column-marker
+;;;
+(require 'column-marker)
+(let ((languages '("shell-script" "ruby" "python" "awk" "emacs-lisp" "c" "c++" "cmake")))
+  (dolist (lan languages)
+    (add-hook (intern (concat lan "-mode-hook")) (lambda () (interactive) (column-marker-1 100)))))
+
+;;;
+;;; Highlight-Indentation
+;;;
+;(require 'highligh-indention-face)
+(let ((languages '("shell-script" "ruby" "python" "awk" "emacs-lisp" "c" "c++" "cmake")))
+  (dolist (lan languages)
+    (add-hook (intern (concat lan "-mode-hook")) 'highlight-indentation-mode)))
