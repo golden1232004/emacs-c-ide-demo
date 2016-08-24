@@ -92,14 +92,21 @@
 ;; “user”: When you want to define your own style
                     ; )
 (custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
  '(c-default-style
-  (quote
-   ((c-mode . "stroustrup")
-    (c++-mode . "stroustrup")
-    (objc-mode . "stroustrup")
-    (java-mode . "java")
-    (awk-mode . "awk")
-    (other . "gnu")))))
+   (quote
+    ((c-mode . "stroustrup")
+     (c++-mode . "stroustrup")
+     (objc-mode . "stroustrup")
+     (java-mode . "java")
+     (awk-mode . "awk")
+     (other . "gnu"))))
+ '(pyim-dicts
+   (quote
+    ((:name "pyim-bigdict.pyim" :file "~/.emacs.d/chinese-pyim/pyim-bigdict.pyim" :coding utf-8-unix :dict-type pinyin-dict)))))
 
 (global-set-key (kbd "RET") 'newline-and-indent)  ; automatically indent when press RET
 
@@ -180,20 +187,7 @@
 (require 'chinese-pyim)
 (setq default-input-method "chinese-pyim")
 (global-set-key (kbd "C-\\") 'toggle-input-method)
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(pyim-dicts
-   (quote
-    ((:name "pyim-bigdict.pyim" :file "~/.emacs.d/chinese-pyim/pyim-bigdict.pyim" :coding utf-8-unix :dict-type pinyin-dict)))))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
+
 
 ;; configure doxygen
 (add-to-list 'load-path "~/.emacs.d/doxymacs")
@@ -223,3 +217,10 @@
 (let ((languages '("shell-script" "ruby" "python" "awk" "emacs-lisp" "c" "c++" "cmake")))
   (dolist (lan languages)
     (add-hook (intern (concat lan "-mode-hook")) 'highlight-indentation-mode)))
+
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(highlight-indentation-face ((t (:inherit fringe :background "deep sky blue")))))
