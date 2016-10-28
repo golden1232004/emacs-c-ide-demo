@@ -10,5 +10,6 @@ Emacs IDE
  * set face(Optional).
   * way1. have set by lisp code
   * way2. Options->Custom Emacs->Specific face. then input highlight-indentation-face. as follow steps.
+6. insert comment: `Ctrl+c d i`
 
 
