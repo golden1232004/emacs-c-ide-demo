@@ -224,3 +224,9 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(highlight-indentation-face ((t (:inherit fringe :background "deep sky blue")))))
+;;;
+;;; add comment
+;;;
+(add-to-list 'load-path "~/.emacs.d/lisp")
+(setq user-mail-address "ljx1232004@163.com")
+(load "comment")
